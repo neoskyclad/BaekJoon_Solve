@@ -1,5 +1,4 @@
-# 1002
-![[Pasted image 20221206232549.png]]
+# <img src="https://github.com/neoskyclad/BaekJoon_Solve/blob/main/image/tier/s3.png?raw=true" width = "2%" height = "2%"> 1002
 ##### [백준 링크](https://www.acmicpc.net/problem/1002)
 ---
 ## 📝 풀이
@@ -7,13 +6,13 @@
 - 총 입력을 6개나 받는데, 순서대로 다음과 같다.
 	x1, y1, r1, x2, y2, r2 -> (첫번째 원의 x, y 좌표와 반지름 r), (두번째 원의 x, y 좌표, 반지름 r)
 - 중학교 때 배웠던 원의 방정식을 생각해내면 쉽게 풀 수 있는 문제이다.
-	![[equation.jpg]]
+
+![equation](equation.jpg)
 	1. 원의 방정식 $$(x - a)^2 + (y - b)^2 = r^2$$
 		*위 식에서 r을 d라고 가정하면*
-	2. 두 원이 두 점에서 만날 때 $$r - r' < d <r + r'$$
+	2. 두 원이 두 점에서 만날 때 $$r - r' < d < r + r'$$
 	3. 두 원이 한 점에서 만날 때 $$r - r' = d\quad or\quad r + r' = d$$
 	4. 두 원이 만나지 않을 때 $$r - r' > d \quad or \quad r + r' < d$$
-	
 ---
 ## 💻 코드
 ```C++
